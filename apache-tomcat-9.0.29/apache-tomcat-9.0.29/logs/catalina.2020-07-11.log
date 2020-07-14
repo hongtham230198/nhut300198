@@ -1,0 +1,98 @@
+11-Jul-2020 11:09:26.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 11:09:26.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\conf\logging.properties
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 11:09:26.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\temp
+11-Jul-2020 11:09:26.524 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;";E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\bin";C:\Users\LAPTOPVTC.VN\AppData\Local\Microsoft\WindowsApps;;.]
+11-Jul-2020 11:09:27.407 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Jul-2020 11:09:27.735 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Jul-2020 11:09:27.735 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,793] milliseconds
+11-Jul-2020 11:09:27.860 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Jul-2020 11:09:27.860 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+11-Jul-2020 11:09:27.938 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war]
+11-Jul-2020 11:09:49.811 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Jul-2020 11:09:51.825 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+11-Jul-2020 11:09:51.825 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 11:09:51.825 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+11-Jul-2020 11:09:51.825 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 11:09:54.089 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+11-Jul-2020 11:09:54.089 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 11:09:54.089 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+11-Jul-2020 11:09:54.089 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 11:10:13.244 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war] has finished in [45,306] ms
+11-Jul-2020 11:10:13.245 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs]
+11-Jul-2020 11:10:13.299 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs] has finished in [54] ms
+11-Jul-2020 11:10:13.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples]
+11-Jul-2020 11:10:15.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples] has finished in [2,401] ms
+11-Jul-2020 11:10:15.704 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager]
+11-Jul-2020 11:10:15.787 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager] has finished in [83] ms
+11-Jul-2020 11:10:15.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager]
+11-Jul-2020 11:10:15.853 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager] has finished in [65] ms
+11-Jul-2020 11:10:15.854 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT]
+11-Jul-2020 11:10:15.892 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT] has finished in [38] ms
+11-Jul-2020 11:10:15.903 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Jul-2020 11:10:15.917 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+11-Jul-2020 11:10:15.922 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [48,172] milliseconds
+11-Jul-2020 13:34:22.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+11-Jul-2020 13:34:22.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+11-Jul-2020 13:34:22.707 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+11-Jul-2020 13:34:22.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Jul-2020 13:34:22.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Jul-2020 13:34:22.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Jul-2020 13:34:22.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+11-Jul-2020 13:34:22.708 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+11-Jul-2020 13:34:22.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Jul-2020 13:34:22.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 13:34:22.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 13:34:22.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\conf\logging.properties
+11-Jul-2020 13:34:22.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Jul-2020 13:34:22.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Jul-2020 13:34:22.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Jul-2020 13:34:22.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Jul-2020 13:34:22.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 13:34:22.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+11-Jul-2020 13:34:22.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\temp
+11-Jul-2020 13:34:22.714 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;";E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\bin";C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\LAPTOPVTC.VN\AppData\Local\Microsoft\WindowsApps;;C:\Users\LAPTOPVTC.VN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAPTOPVTC.VN\AppData\Roaming\npm;.]
+11-Jul-2020 13:34:23.589 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Jul-2020 13:34:24.014 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Jul-2020 13:34:24.022 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,692] milliseconds
+11-Jul-2020 13:34:24.072 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Jul-2020 13:34:24.072 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+11-Jul-2020 13:34:24.226 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war]
+11-Jul-2020 13:34:50.918 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Jul-2020 13:34:53.200 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+11-Jul-2020 13:34:53.201 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 13:34:53.205 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+11-Jul-2020 13:34:53.206 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 13:34:55.938 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+11-Jul-2020 13:34:55.938 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 13:34:55.938 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+11-Jul-2020 13:34:55.938 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+11-Jul-2020 13:35:16.932 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war] has finished in [52,707] ms
+11-Jul-2020 13:35:16.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs]
+11-Jul-2020 13:35:17.020 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs] has finished in [86] ms
+11-Jul-2020 13:35:17.022 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples]
+11-Jul-2020 13:35:18.966 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples] has finished in [1,944] ms
+11-Jul-2020 13:35:18.967 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager]
+11-Jul-2020 13:35:19.057 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager] has finished in [90] ms
+11-Jul-2020 13:35:19.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager]
+11-Jul-2020 13:35:19.101 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager] has finished in [42] ms
+11-Jul-2020 13:35:19.102 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT]
+11-Jul-2020 13:35:19.141 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT] has finished in [39] ms
+11-Jul-2020 13:35:19.149 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Jul-2020 13:35:19.179 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+11-Jul-2020 13:35:19.188 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [55,166] milliseconds

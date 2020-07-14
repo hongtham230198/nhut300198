@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ADMIN</title>
+    <!-- Load Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/public/css/style.css" />
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.1/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.1/css/ol.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <style>
+        #map {
+            float: right;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 550px;
+            width: 1002px;
+            border-top: solid 1px;
+        }
+        
+        .check {
+            border-bottom: solid 0px;
+        }
+        
+        .ol-popup {
+            position: absolute;
+            background-color: white;
+            -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 1px 4px rgba(59, 50, 50, 0.2));
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+            bottom: 12px;
+            left: -50px;
+            min-width: 220px;
+        }
+        
+        .ol-popup:after,
+        .ol-popup:before {
+            top: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        
+        .ol-popup:after {
+            border-top-color: white;
+            border-width: 10px;
+            left: 48px;
+            margin-left: -10px;
+        }
+        
+        .ol-popup:before {
+            border-top-color: #cccccc;
+            border-width: 11px;
+            left: 48px;
+            margin-left: -11px;
+        }
+        
+        .ol-popup-closer {
+            text-decoration: none;
+            position: absolute;
+            top: 2px;
+            right: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <!-- <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="../quantri/list">Home</a></li>
+                    <li><a href="../../">Map</a></li>
+                    <li><a href="../hodan/them">INSERT</a></li>
+                </ul> -->
+            </div>
+            <form action="/quantri/sua/" method="POST" enctype="application/x-www-form-urlencoded" style="margin-top: 10px; float: right;">
+                <div class="form-group">
+
+                    <input type="hidden" class="form-control" name="txtmabn" value="<%=bn.mabn%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Mã Bệnh TN</label>
+                    <input type="text" class="form-control" name="txtmabhyt" value="<%=bn.mabhyt%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Họ Tên</label>
+                    <input type="text" class="form-control" name="txthoten" value="<%=bn.hoten%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Nghề Nghiệp</label>
+                    <input type="text" class="form-control" name="txtnghenghiep" value="<%=bn.nghenghiep%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Địa Chỉ</label>
+                    <input type="text" class="form-control" name="txtdiachi" value="<%=bn.diachi%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Tuổi</label>
+                    <input type="text" class="form-control" name="txttuoi" value="<%=bn.tuoi%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Giới Tính</label>
+                    <input type="text" class="form-control" name="txtgioitinh" value="<%=bn.gioitinh%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">ID Phường</label>
+                    <input type="text" class="form-control" name="txtidphuong" value="<%=bn.idphuong%>">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Geom</label>
+                    <input type="text" class="form-control" name="txtGeom" value="<%=bn.geom%>">
+                </div>
+                <!-- <button type="submit" name="btnThem" style="width:80px; height:40px;" class="glyphicon glyphicon-plus btn btn-primary btn-xs">thêm</button> -->
+                <button type="submit" name="btnThem" style="font-size: large; "> Sửa     </button>
+                <div>
+                    <div id="map" class="map">
+
+
+                        <div id="popup" class="ol-popup">
+                            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                            <div id="popup-content"></div>
+                        </div>
+                        <div id="info">&nbsp;</div>
+                    </div>
+                </div>
+
+            </form>
+
+            <script type="text/javascript" src="/public/js/jquery.min.js"></script>
+            <script type="text/javascript" src="/public/js/bootstrap.min.js"></script>
+            <script>
+                var container = document.getElementById('popup');
+                var content = document.getElementById('popup-content');
+                var closer = document.getElementById('popup-closer');
+
+                /**
+                 * Create an overlay to anchor the popup to the map.
+                 */
+                var overlay = new ol.Overlay( /** @type {olx.OverlayOptions} */ ({
+                    element: container,
+                    autoPan: true,
+                    autoPanAnimation: {
+                        duration: 250
+                    }
+                }));
+                /**
+                 * Add a click handler to hide the popup.
+                 * @return {boolean} Don't follow the href.
+                 */
+                closer.onclick = function() {
+                    overlay.setPosition(undefined);
+                    closer.blur();
+                    return false;
+                };
+
+                var center1 = [11871819.171012152, 1229646.7537582985]
+                var map = new ol.Map({
+                    view: new ol.View({
+                        center: center1,
+                        zoom: 11,
+                    }),
+                    layers: [
+                        new ol.layer.Tile({
+                            source: new ol.source.OSM()
+                        })
+                    ],
+                    overlays: [overlay],
+                    target: 'map',
+                    view: new ol.View({
+                        center: [11871819.171012152, 1229646.7537582985],
+                        zoom: 13
+                    })
+                });
+
+
+                var vung_phuong = new ol.layer.Image({
+                    source: new ol.source.ImageWMS({
+                        url: 'http://localhost:8080/geoserver/DoAnGis/wms',
+                        params: {
+                            'LAYERS': 'DoAnGis:vungranhgioiphuongtxtdm_region'
+                        },
+                        serverType: 'geoserver'
+                    })
+                });
+
+                var ubnd = new ol.layer.Image({
+                    source: new ol.source.ImageWMS({
+                        url: 'http://localhost:8080/geoserver/DoAnGis/wms',
+                        params: {
+                            'LAYERS': 'DoAnGis:ubnd_point'
+                        },
+                        serverType: 'geoserver'
+                    })
+                });
+                var benh_nhan = new ol.layer.Image({
+                    source: new ol.source.ImageWMS({
+                        url: 'http://localhost:8080/geoserver/DoAnGis/wms',
+                        params: {
+                            'LAYERS': 'DoAnGis:bn_point'
+                        },
+                        serverType: 'geoserver'
+                    })
+                });
+                map.addLayer(vung_phuong);
+                map.addLayer(ubnd);
+                map.addLayer(benh_nhan);
+
+                vung_phuong.setOpacity(1);
+                benh_nhan.setOpacity(2);
+                ubnd.setOpacity(0.3);
+
+                map.on('singleclick', function(evt) {
+
+                    var view = map.getView();
+                    var viewResolution = view.getResolution();
+                    var source = benh_nhan.getSource();
+                    var url = source.getFeatureInfoUrl(
+                        evt.coordinate, viewResolution, view.getProjection(), {
+                            'INFO_FORMAT': 'application/json',
+                            'FEATURE_COUNT': 50
+                        });
+
+                    // if (url) {
+                    //     $.ajax({
+                    //         type: "POST",
+                    //         url: url,
+                    //         contentType: "application/json; charset=utf-8",
+                    //         dataType: 'json',
+                    //         success: function(n) {
+                    //             var content = "<table>";
+                    //             for (var i = 0; i < n.features.length; i++) {
+                    //                 var feature = n.features[i];
+                    //                 var featureAttr = feature.properties;
+                    //                 content += " <tr> <td> Tên bệnh nhân: " + featureAttr["hoten"] + "</td>" +
+                    //                     "<tr> <td> Tuổi: " + featureAttr["tuoi"] + " </td></tr>" +
+                    //                     "<tr> <td> Nghề nghiệp: " + featureAttr["nghenghiep"] + " </td></tr>" +
+                    //                     "<tr> <td> Địa chỉ: " + featureAttr["diachi"] + " </td></tr>" +
+
+
+                    //                     "</tr>"
+                    //             }
+                    //             content += "</table>";
+                    //             $("#popup-content").html(content);
+                    //             overlay.setPosition(evt.coordinate);
+                    //         }
+                    //     });
+                    // }
+
+                });
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ADMIN</title>
+    <!-- Load Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/public/css/style.css" />
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.1/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.1/css/ol.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <style>
+        #map {
+            float: right;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 550px;
+            width: 1002px;
+            border-top: solid 1px;
+        }
+        
+        .check {
+            border-bottom: solid 0px;
+        }
+        
+        .ol-popup {
+            position: absolute;
+            background-color: white;
+            -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 1px 4px rgba(59, 50, 50, 0.2));
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+            bottom: 12px;
+            left: -50px;
+            min-width: 220px;
+        }
+        
+        .ol-popup:after,
+        .ol-popup:before {
+            top: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        
+        .ol-popup:after {
+            border-top-color: white;
+            border-width: 10px;
+            left: 48px;
+            margin-left: -10px;
+        }
+        
+        .ol-popup:before {
+            border-top-color: #cccccc;
+            border-width: 11px;
+            left: 48px;
+            margin-left: -11px;
+        }
+        
+        .ol-popup-closer {
+            text-decoration: none;
+            position: absolute;
+            top: 2px;
+            right: 8px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <!-- <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="../quantri/list">Home</a></li>
+                    <li><a href="../../">Map</a></li>
+                    <li><a href="../hodan/them">INSERT</a></li>
+                </ul> -->
+            </div>
+            <form action="" method="POST" enctype="application/x-www-form-urlencoded" style="margin-top: 10px; float: left;">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Mã Bệnh Nhân</label>
+                    <input type="text" class="form-control" name="txtmabn">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Mã Bệnh TN</label>
+                    <input type="text" class="form-control" name="txtmabenhtn">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Ngày Nhập Viện</label>
+                    <input type="date" class="form-control" name="txtngaynv">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Tình Trạng</label>
+                    <input type="text" class="form-control" name="txttinhtrang">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Kết Quả Điều Trị</label>
+                    <input type="text" class="form-control" name="txtkq_dt">
+                </div>
+
+
+                <!-- <button type="submit" name="btnThem" style="width:80px; height:40px;" class="glyphicon glyphicon-plus btn btn-primary btn-xs">thêm</button> -->
+                <button type="submit" name="btnThem" style="font-size: large; "> Thêm     </button>
+
+
+            </form>
+
+            <script type="text/javascript" src="/public/js/jquery.min.js"></script>
+            <script type="text/javascript" src="/public/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

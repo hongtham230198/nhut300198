@@ -1,0 +1,39 @@
+<dataStore>
+  <id>DataStoreInfoImpl-5b05a77:16f0d92a400:-7ffb</id>
+  <name>ranhgioiphuong</name>
+  <description>phuong</description>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--2f4aa945:16ee6085299:-7ffe</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="schema">public</entry>
+    <entry key="Evictor run periodicity">300</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="Batch insert size">1</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="database">GIS</entry>
+    <entry key="host">localhost</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="Connection timeout">20</entry>
+    <entry key="create database">false</entry>
+    <entry key="port">5432</entry>
+    <entry key="passwd">crypt1:aoEELayXZQUFOQn/8BYwuHhoJc/6AWc3</entry>
+    <entry key="min connections">1</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="namespace">http://localhost:8080/geoserver/WebGIS/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=WebGIS:vungranhgioiphuongtxtdm_region&amp;styles=&amp;bbox=106.595397949219,10.9397344589233,106.719482421875,11.1113767623901&amp;width=555&amp;height=768&amp;srs=EPSG:4326&amp;format=application/openlayers#toggle</entry>
+    <entry key="max connections">10</entry>
+    <entry key="Evictor tests per run">3</entry>
+    <entry key="Test while idle">true</entry>
+    <entry key="user">postgres</entry>
+    <entry key="Max connection idle time">300</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

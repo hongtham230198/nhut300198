@@ -1,0 +1,20 @@
+<layer>
+  <name>ubnd_point</name>
+  <id>LayerInfoImpl-62485969:17235f6b896:-7ffb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-133996b0:17272f53a22:-7ff9</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-133996b0:17272f53a22:-7ff9</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-62485969:17235f6b896:-7ffc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

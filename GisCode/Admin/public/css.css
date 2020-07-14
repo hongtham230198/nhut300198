@@ -1,0 +1,209 @@
+    #map {
+        display: block;
+        float: right;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 550px;
+        width: 1002px;
+        border-top: solid 1px;
+    }
+    
+    .check {
+        border-bottom: solid 0px;
+    }
+    
+    .ol-popup {
+        position: absolute;
+        background-color: white;
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0 1px 4px rgba(59, 50, 50, 0.2));
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #cccccc;
+        bottom: 12px;
+        left: -50px;
+        min-width: 220px;
+    }
+    
+    .ol-popup:after,
+    .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+    }
+    
+    .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+    }
+    
+    .ol-popup-closer {
+        text-decoration: none;
+        position: absolute;
+        top: 2px;
+        right: 8px;
+    }
+    
+    .ol-popup-closer:after {
+        content: "X";
+    }
+    /* .information {
+    margin-top: 270px;
+    background: #E8F5E9;
+    height: 300px;
+} */
+    /* .ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+} */
+    
+    .header {
+        border-top: solid 0px;
+        border-bottom: solid 1px;
+        height: 40px;
+        width: auto;
+        background-color: #3333CC;
+    }
+    
+    #texthd {
+        float: left;
+        margin-left: 20px;
+        color: white;
+    }
+    
+    .baobody {
+        height: 612px;
+        width: 1333px;
+        border: solid 0px;
+        border-bottom: solid 1px;
+    }
+    
+    .trai {
+        float: left;
+        height: 610px;
+        width: 330px;
+        border-right: solid 1px;
+        border-bottom: solid 0px;
+    }
+    
+    #textphaitren {
+        float: right;
+        margin-right: 780px;
+        margin-top: 15px;
+    }
+    
+    .phaitren {
+        width: 1002px;
+        height: 60px;
+        float: right;
+        background-color: rgb(248, 250, 249);
+    }
+    
+    #t1 {
+        float: right;
+        margin-right: 90px;
+        margin-top: -40px;
+    }
+    
+    #t2 {
+        float: right;
+        margin-right: 10px;
+        margin-top: -40px;
+    }
+    
+    #t3 {
+        float: right;
+        margin-right: 10px;
+        margin-top: -50px;
+    }
+    
+    .ttcabenh {
+        height: 20px;
+        margin-left: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .logoid {
+        margin-top: 6px;
+        float: left;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+    }
+    
+    .cabenh {
+        float: left;
+        margin-left: 5px;
+    }
+    
+    .solieu {
+        float: right;
+        margin-right: 25px;
+    }
+    
+    .tttraitren {
+        margin-top: -10px;
+    }
+    
+    .thietke {
+        color: brown;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    
+    .ttct {
+        width: 329px;
+        border-right: solid 0px;
+        border-left: solid 0px;
+    }
+    
+    .cbb {
+        float: right;
+        border: solid 1px;
+        height: 25px;
+        width: 120px;
+        margin-right: 10px;
+        margin-top: -40px;
+        border-radius: 10px 10px 10px 10px;
+        background-color: #EEEEEE;
+    }
+    
+    .chuthich {
+        float: left;
+        margin-left: 13px;
+    }
+    
+    .ct2 {
+        margin-top: 10px;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+    }
+    
+    .ctbenh {
+        margin-left: 20px;
+        margin-top: -16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 100px;
+        font-size: 15px;
+    }

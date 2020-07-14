@@ -1,0 +1,43 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-62485969:17235f6b896:-7ffc</id>
+  <name>ubnd_point</name>
+  <nativeName>ubnd_point</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-4ed0958f:1717ba6aba4:-7ffe</id>
+  </namespace>
+  <title>ubnd_point</title>
+  <keywords>
+    <string>features</string>
+    <string>ubnd_point</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>106.626220703125</minx>
+    <maxx>106.712348937988</maxx>
+    <miny>10.9624128341675</miny>
+    <maxy>11.0765180587769</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>106.626220703125</minx>
+    <maxx>106.712348937988</maxx>
+    <miny>10.9624128341675</miny>
+    <maxy>11.0765180587769</maxy>
+    <crs>GEOGCS[&quot;WGS84(DD)&quot;, &#xd;
+  DATUM[&quot;WGS84&quot;, &#xd;
+    SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]], &#xd;
+  PRIMEM[&quot;Greenwich&quot;, 0.0], &#xd;
+  UNIT[&quot;degree&quot;, 0.017453292519943295], &#xd;
+  AXIS[&quot;Geodetic longitude&quot;, EAST], &#xd;
+  AXIS[&quot;Geodetic latitude&quot;, NORTH]]</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-62485969:17235f6b896:-7fff</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

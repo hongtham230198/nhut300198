@@ -1,0 +1,5 @@
+<namespace>
+  <id>NamespaceInfoImpl--2f4aa945:16ee6085299:-7ffd</id>
+  <prefix>WebGIS</prefix>
+  <uri>http://localhost:8080/geoserver/WebGIS/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=WebGIS:vungranhgioiphuongtxtdm_region&amp;styles=&amp;bbox=106.595397949219,10.9397344589233,106.719482421875,11.1113767623901&amp;width=555&amp;height=768&amp;srs=EPSG:4326&amp;format=application/openlayers#toggle</uri>
+</namespace>

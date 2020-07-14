@@ -1,0 +1,658 @@
+14-Jul-2020 09:45:31.247 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+14-Jul-2020 09:45:31.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+14-Jul-2020 09:45:31.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+14-Jul-2020 09:45:31.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Jul-2020 09:45:31.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Jul-2020 09:45:31.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Jul-2020 09:45:31.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+14-Jul-2020 09:45:31.291 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+14-Jul-2020 09:45:31.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Jul-2020 09:45:31.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 09:45:31.292 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 09:45:31.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\conf\logging.properties
+14-Jul-2020 09:45:31.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2020 09:45:31.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2020 09:45:31.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2020 09:45:31.295 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Jul-2020 09:45:31.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 09:45:31.297 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 09:45:31.297 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\temp
+14-Jul-2020 09:45:31.298 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;";E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\bin";C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\LAPTOPVTC.VN\AppData\Local\Microsoft\WindowsApps;;C:\Users\LAPTOPVTC.VN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAPTOPVTC.VN\AppData\Roaming\npm;.]
+14-Jul-2020 09:45:32.896 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 09:45:33.400 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 09:45:33.412 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2,716] milliseconds
+14-Jul-2020 09:45:33.496 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Jul-2020 09:45:33.500 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+14-Jul-2020 09:45:33.591 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war]
+14-Jul-2020 09:46:07.762 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Jul-2020 09:46:10.718 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+14-Jul-2020 09:46:10.732 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 09:46:10.734 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 09:46:10.734 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 09:46:14.550 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+14-Jul-2020 09:46:14.551 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 09:46:14.552 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 09:46:14.552 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 09:46:44.954 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war] has finished in [71,363] ms
+14-Jul-2020 09:46:44.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs]
+14-Jul-2020 09:46:45.110 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs] has finished in [150] ms
+14-Jul-2020 09:46:45.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples]
+14-Jul-2020 09:46:48.164 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples] has finished in [3,018] ms
+14-Jul-2020 09:46:48.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager]
+14-Jul-2020 09:46:48.437 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager] has finished in [248] ms
+14-Jul-2020 09:46:48.543 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager]
+14-Jul-2020 09:46:48.712 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager] has finished in [169] ms
+14-Jul-2020 09:46:48.868 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT]
+14-Jul-2020 09:46:49.047 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT] has finished in [180] ms
+14-Jul-2020 09:46:49.149 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 09:46:49.707 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 09:46:49.713 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [76,293] milliseconds
+14-Jul-2020 11:27:17.611 SEVERE [http-nio-8080-exec-12] it.geosolutions.imageio.plugins.png.PNGWriter.writePNG Failed to encode the PNG
+	ar.com.hjg.pngj.PngjOutputException: org.geoserver.ows.ClientStreamAbortedException
+		at ar.com.hjg.pngj.PngHelperInternal.writeBytes(PngHelperInternal.java:196)
+		at ar.com.hjg.pngj.chunks.ChunkRaw.writeChunk(ChunkRaw.java:97)
+		at ar.com.hjg.pngj.PngIDatChunkOutputStream.flushBuffer(PngIDatChunkOutputStream.java:28)
+		at ar.com.hjg.pngj.ProgressiveOutputStream.checkFlushBuffer(ProgressiveOutputStream.java:65)
+		at ar.com.hjg.pngj.ProgressiveOutputStream.write(ProgressiveOutputStream.java:34)
+		at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+		at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+		at ar.com.hjg.pngj.PngWriter.filterAndSend(PngWriter.java:245)
+		at ar.com.hjg.pngj.PngWriter.writeRow(PngWriter.java:572)
+		at ar.com.hjg.pngj.PngWriter.writeRow(PngWriter.java:548)
+		at it.geosolutions.imageio.plugins.png.PNGWriter.writePNG(PNGWriter.java:90)
+		at org.geoserver.wms.map.png.PNGJWriter.writePNG(PNGJWriter.java:51)
+		at org.geoserver.wms.map.PNGMapResponse.formatImageOutputStream(PNGMapResponse.java:104)
+		at org.geoserver.wms.map.RenderedImageMapResponse.write(RenderedImageMapResponse.java:123)
+		at org.geoserver.ows.Dispatcher.response(Dispatcher.java:1008)
+		at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:272)
+		at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:147)
+		at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+		at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+		at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+		at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+		at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+		at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:84)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+		at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+		at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+		at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:152)
+		at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+		at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:87)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:89)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:352)
+		at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:171)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.geoserver.ows.ClientStreamAbortedException
+		at org.geoserver.ows.DispatcherOutputStream.write(DispatcherOutputStream.java:46)
+		at ar.com.hjg.pngj.PngHelperInternal.writeBytes(PngHelperInternal.java:194)
+		... 115 more
+	Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+		at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:746)
+		at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:682)
+		at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:386)
+		at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:364)
+		at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+		at org.geoserver.filters.FlushSafeResponse$FlushSafeServletOutputStream.write(FlushSafeResponse.java:58)
+		at org.geoserver.filters.AlternativesResponseStream.write(AlternativesResponseStream.java:60)
+		at org.springframework.security.web.context.OnCommittedResponseWrapper$SaveContextServletOutputStream.write(OnCommittedResponseWrapper.java:540)
+		at org.vfny.geoserver.util.PartialBufferedOutputStream2.write(PartialBufferedOutputStream2.java:155)
+		at org.geoserver.ows.DispatcherOutputStream.write(DispatcherOutputStream.java:44)
+		... 116 more
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+		at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+		at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+		at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+		at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+		at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+		at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1257)
+		at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:814)
+		at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:584)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:522)
+		at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:538)
+		at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:112)
+		at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:190)
+		at org.apache.coyote.Response.doWrite(Response.java:601)
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:339)
+		... 126 more
+14-Jul-2020 14:07:22.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\conf\logging.properties
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 14:07:22.993 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\temp
+14-Jul-2020 14:07:23.008 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;";E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\bin";C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\LAPTOPVTC.VN\AppData\Local\Microsoft\WindowsApps;;C:\Users\LAPTOPVTC.VN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAPTOPVTC.VN\AppData\Roaming\npm;.]
+14-Jul-2020 14:07:23.930 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 14:07:24.258 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 14:07:24.258 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,609] milliseconds
+14-Jul-2020 14:07:24.321 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Jul-2020 14:07:24.321 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+14-Jul-2020 14:07:24.352 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war]
+14-Jul-2020 14:07:47.013 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Jul-2020 14:07:49.241 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+14-Jul-2020 14:07:49.243 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 14:07:49.245 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 14:07:49.246 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 14:07:51.651 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+14-Jul-2020 14:07:51.653 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 14:07:51.659 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 14:07:51.661 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 14:08:13.850 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war] has finished in [49,497] ms
+14-Jul-2020 14:08:13.859 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs]
+14-Jul-2020 14:08:14.000 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs] has finished in [142] ms
+14-Jul-2020 14:08:14.008 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples]
+14-Jul-2020 14:08:18.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples] has finished in [4,194] ms
+14-Jul-2020 14:08:18.206 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager]
+14-Jul-2020 14:08:18.299 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager] has finished in [93] ms
+14-Jul-2020 14:08:18.299 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager]
+14-Jul-2020 14:08:18.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager] has finished in [94] ms
+14-Jul-2020 14:08:18.424 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT]
+14-Jul-2020 14:08:18.538 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT] has finished in [113] ms
+14-Jul-2020 14:08:18.559 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 14:08:18.905 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 14:08:18.909 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [54,634] milliseconds
+14-Jul-2020 14:47:52.917 SEVERE [http-nio-8080-exec-7] it.geosolutions.imageio.plugins.png.PNGWriter.writePNG Failed to encode the PNG
+	ar.com.hjg.pngj.PngjOutputException: org.geoserver.ows.ClientStreamAbortedException
+		at ar.com.hjg.pngj.PngHelperInternal.writeBytes(PngHelperInternal.java:196)
+		at ar.com.hjg.pngj.chunks.ChunkRaw.writeChunk(ChunkRaw.java:97)
+		at ar.com.hjg.pngj.PngIDatChunkOutputStream.flushBuffer(PngIDatChunkOutputStream.java:28)
+		at ar.com.hjg.pngj.ProgressiveOutputStream.checkFlushBuffer(ProgressiveOutputStream.java:65)
+		at ar.com.hjg.pngj.ProgressiveOutputStream.write(ProgressiveOutputStream.java:34)
+		at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+		at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+		at ar.com.hjg.pngj.PngWriter.filterAndSend(PngWriter.java:245)
+		at ar.com.hjg.pngj.PngWriter.writeRow(PngWriter.java:572)
+		at ar.com.hjg.pngj.PngWriter.writeRow(PngWriter.java:548)
+		at it.geosolutions.imageio.plugins.png.PNGWriter.writePNG(PNGWriter.java:90)
+		at org.geoserver.wms.map.png.PNGJWriter.writePNG(PNGJWriter.java:51)
+		at org.geoserver.wms.map.PNGMapResponse.formatImageOutputStream(PNGMapResponse.java:104)
+		at org.geoserver.wms.map.RenderedImageMapResponse.write(RenderedImageMapResponse.java:123)
+		at org.geoserver.ows.Dispatcher.response(Dispatcher.java:1008)
+		at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:272)
+		at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:147)
+		at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+		at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+		at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+		at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+		at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+		at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:84)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+		at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+		at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+		at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:152)
+		at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+		at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:87)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:89)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:352)
+		at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:171)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.geoserver.ows.ClientStreamAbortedException
+		at org.geoserver.ows.DispatcherOutputStream.write(DispatcherOutputStream.java:46)
+		at ar.com.hjg.pngj.PngHelperInternal.writeBytes(PngHelperInternal.java:194)
+		... 115 more
+	Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+		at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:746)
+		at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:682)
+		at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:386)
+		at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:364)
+		at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+		at org.geoserver.filters.FlushSafeResponse$FlushSafeServletOutputStream.write(FlushSafeResponse.java:58)
+		at org.geoserver.filters.AlternativesResponseStream.write(AlternativesResponseStream.java:60)
+		at org.springframework.security.web.context.OnCommittedResponseWrapper$SaveContextServletOutputStream.write(OnCommittedResponseWrapper.java:540)
+		at org.vfny.geoserver.util.PartialBufferedOutputStream2.write(PartialBufferedOutputStream2.java:155)
+		at org.geoserver.ows.DispatcherOutputStream.write(DispatcherOutputStream.java:44)
+		... 116 more
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+		at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+		at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+		at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+		at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+		at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+		at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1257)
+		at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:814)
+		at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:584)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:522)
+		at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:538)
+		at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:112)
+		at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:190)
+		at org.apache.coyote.Response.doWrite(Response.java:601)
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:339)
+		... 126 more
+14-Jul-2020 14:47:53.171 SEVERE [http-nio-8080-exec-8] it.geosolutions.imageio.plugins.png.PNGWriter.writePNG Failed to encode the PNG
+	ar.com.hjg.pngj.PngjOutputException: org.geoserver.ows.ClientStreamAbortedException
+		at ar.com.hjg.pngj.PngHelperInternal.writeBytes(PngHelperInternal.java:196)
+		at ar.com.hjg.pngj.chunks.ChunkRaw.writeChunk(ChunkRaw.java:97)
+		at ar.com.hjg.pngj.PngIDatChunkOutputStream.flushBuffer(PngIDatChunkOutputStream.java:28)
+		at ar.com.hjg.pngj.ProgressiveOutputStream.checkFlushBuffer(ProgressiveOutputStream.java:65)
+		at ar.com.hjg.pngj.ProgressiveOutputStream.write(ProgressiveOutputStream.java:34)
+		at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:253)
+		at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:211)
+		at ar.com.hjg.pngj.PngWriter.filterAndSend(PngWriter.java:245)
+		at ar.com.hjg.pngj.PngWriter.writeRow(PngWriter.java:572)
+		at ar.com.hjg.pngj.PngWriter.writeRow(PngWriter.java:548)
+		at it.geosolutions.imageio.plugins.png.PNGWriter.writePNG(PNGWriter.java:90)
+		at org.geoserver.wms.map.png.PNGJWriter.writePNG(PNGJWriter.java:51)
+		at org.geoserver.wms.map.PNGMapResponse.formatImageOutputStream(PNGMapResponse.java:104)
+		at org.geoserver.wms.map.RenderedImageMapResponse.write(RenderedImageMapResponse.java:123)
+		at org.geoserver.ows.Dispatcher.response(Dispatcher.java:1008)
+		at org.geoserver.ows.Dispatcher.handleRequestInternal(Dispatcher.java:272)
+		at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:147)
+		at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+		at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.ThreadLocalsCleanupFilter.doFilter(ThreadLocalsCleanupFilter.java:28)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:75)
+		at org.geoserver.wms.animate.AnimatorFilter.doFilter(AnimatorFilter.java:71)
+		at org.geoserver.filters.SpringDelegatingFilter$Chain.doFilter(SpringDelegatingFilter.java:71)
+		at org.geoserver.filters.SpringDelegatingFilter.doFilter(SpringDelegatingFilter.java:46)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.platform.AdvancedDispatchFilter.doFilter(AdvancedDispatchFilter.java:50)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+		at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerAnonymousAuthenticationFilter.doFilter(GeoServerAnonymousAuthenticationFilter.java:54)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.geoserver.security.filter.GeoServerBasicAuthenticationFilter.doFilter(GeoServerBasicAuthenticationFilter.java:84)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:69)
+		at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91)
+		at org.geoserver.security.filter.GeoServerSecurityContextPersistenceFilter$1.doFilter(GeoServerSecurityContextPersistenceFilter.java:53)
+		at org.geoserver.security.filter.GeoServerCompositeFilter$NestedFilterChain.doFilter(GeoServerCompositeFilter.java:73)
+		at org.geoserver.security.filter.GeoServerCompositeFilter.doFilter(GeoServerCompositeFilter.java:92)
+		at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330)
+		at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213)
+		at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176)
+		at org.geoserver.security.GeoServerSecurityFilterChainProxy.doFilter(GeoServerSecurityFilterChainProxy.java:152)
+		at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+		at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.LoggingFilter.doFilter(LoggingFilter.java:87)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.XFrameOptionsFilter.doFilter(XFrameOptionsFilter.java:89)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.GZIPFilter.doFilter(GZIPFilter.java:42)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.SessionDebugFilter.doFilter(SessionDebugFilter.java:48)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.geoserver.filters.FlushSafeFilter.doFilter(FlushSafeFilter.java:44)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:352)
+		at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:171)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.geoserver.ows.ClientStreamAbortedException
+		at org.geoserver.ows.DispatcherOutputStream.write(DispatcherOutputStream.java:46)
+		at ar.com.hjg.pngj.PngHelperInternal.writeBytes(PngHelperInternal.java:194)
+		... 115 more
+	Caused by: org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:351)
+		at org.apache.catalina.connector.OutputBuffer.appendByteArray(OutputBuffer.java:746)
+		at org.apache.catalina.connector.OutputBuffer.append(OutputBuffer.java:682)
+		at org.apache.catalina.connector.OutputBuffer.writeBytes(OutputBuffer.java:386)
+		at org.apache.catalina.connector.OutputBuffer.write(OutputBuffer.java:364)
+		at org.apache.catalina.connector.CoyoteOutputStream.write(CoyoteOutputStream.java:96)
+		at org.geoserver.filters.FlushSafeResponse$FlushSafeServletOutputStream.write(FlushSafeResponse.java:58)
+		at org.geoserver.filters.AlternativesResponseStream.write(AlternativesResponseStream.java:60)
+		at org.springframework.security.web.context.OnCommittedResponseWrapper$SaveContextServletOutputStream.write(OnCommittedResponseWrapper.java:540)
+		at org.vfny.geoserver.util.PartialBufferedOutputStream2.write(PartialBufferedOutputStream2.java:155)
+		at org.geoserver.ows.DispatcherOutputStream.write(DispatcherOutputStream.java:44)
+		... 116 more
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+		at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+		at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+		at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+		at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+		at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+		at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1257)
+		at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:814)
+		at org.apache.tomcat.util.net.SocketWrapperBase.writeBlocking(SocketWrapperBase.java:584)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:522)
+		at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.doWrite(Http11OutputBuffer.java:538)
+		at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:112)
+		at org.apache.coyote.http11.Http11OutputBuffer.doWrite(Http11OutputBuffer.java:190)
+		at org.apache.coyote.Response.doWrite(Response.java:601)
+		at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:339)
+		... 126 more
+14-Jul-2020 18:40:00.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+14-Jul-2020 18:40:00.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+14-Jul-2020 18:40:00.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+14-Jul-2020 18:40:00.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Jul-2020 18:40:00.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Jul-2020 18:40:00.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Jul-2020 18:40:00.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+14-Jul-2020 18:40:00.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+14-Jul-2020 18:40:00.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Jul-2020 18:40:00.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 18:40:00.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 18:40:00.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\conf\logging.properties
+14-Jul-2020 18:40:00.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2020 18:40:00.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2020 18:40:00.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2020 18:40:00.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Jul-2020 18:40:00.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 18:40:00.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 18:40:00.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\temp
+14-Jul-2020 18:40:00.953 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;";E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\bin";C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\LAPTOPVTC.VN\AppData\Local\Microsoft\WindowsApps;;C:\Users\LAPTOPVTC.VN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAPTOPVTC.VN\AppData\Roaming\npm;.]
+14-Jul-2020 18:40:02.114 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 18:40:02.432 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 18:40:02.438 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2,165] milliseconds
+14-Jul-2020 18:40:02.527 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Jul-2020 18:40:02.528 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+14-Jul-2020 18:40:02.624 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war]
+14-Jul-2020 18:40:19.122 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Jul-2020 18:40:20.728 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+14-Jul-2020 18:40:20.730 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 18:40:20.733 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 18:40:20.734 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 18:40:22.972 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+14-Jul-2020 18:40:22.972 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 18:40:22.974 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 18:40:22.976 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 18:40:43.168 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war] has finished in [40,545] ms
+14-Jul-2020 18:40:43.168 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs]
+14-Jul-2020 18:40:43.219 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs] has finished in [51] ms
+14-Jul-2020 18:40:43.219 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples]
+14-Jul-2020 18:40:44.988 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples] has finished in [1,769] ms
+14-Jul-2020 18:40:44.988 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager]
+14-Jul-2020 18:40:45.061 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager] has finished in [73] ms
+14-Jul-2020 18:40:45.061 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager]
+14-Jul-2020 18:40:45.111 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager] has finished in [50] ms
+14-Jul-2020 18:40:45.119 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT]
+14-Jul-2020 18:40:45.141 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT] has finished in [22] ms
+14-Jul-2020 18:40:45.151 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 18:40:45.162 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 18:40:45.172 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [42,731] milliseconds
+14-Jul-2020 21:58:33.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.29
+14-Jul-2020 21:58:33.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 16 2019 17:29:07 UTC
+14-Jul-2020 21:58:33.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.29.0
+14-Jul-2020 21:58:33.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Jul-2020 21:58:33.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Jul-2020 21:58:33.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Jul-2020 21:58:33.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+14-Jul-2020 21:58:33.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+14-Jul-2020 21:58:33.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Jul-2020 21:58:33.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 21:58:33.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 21:58:33.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\conf\logging.properties
+14-Jul-2020 21:58:33.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2020 21:58:33.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2020 21:58:33.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2020 21:58:33.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Jul-2020 21:58:33.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 21:58:33.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29
+14-Jul-2020 21:58:33.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\temp
+14-Jul-2020 21:58:33.763 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_241\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_241\bin;";E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\bin";C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\LAPTOPVTC.VN\AppData\Local\Microsoft\WindowsApps;;C:\Users\LAPTOPVTC.VN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAPTOPVTC.VN\AppData\Roaming\npm;.]
+14-Jul-2020 21:58:34.535 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 21:58:34.826 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 21:58:34.830 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,405] milliseconds
+14-Jul-2020 21:58:34.864 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Jul-2020 21:58:34.864 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.29]
+14-Jul-2020 21:58:34.902 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war]
+14-Jul-2020 21:58:49.325 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Jul-2020 21:58:50.948 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+14-Jul-2020 21:58:50.950 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 21:58:50.953 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 21:58:50.953 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 21:58:53.077 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+14-Jul-2020 21:58:53.078 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 21:58:53.078 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+14-Jul-2020 21:58:53.079 WARNING [main] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+14-Jul-2020 21:59:10.555 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\geoserver.war] has finished in [35,653] ms
+14-Jul-2020 21:59:10.557 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs]
+14-Jul-2020 21:59:10.594 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\docs] has finished in [38] ms
+14-Jul-2020 21:59:10.596 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples]
+14-Jul-2020 21:59:12.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\examples] has finished in [1,586] ms
+14-Jul-2020 21:59:12.183 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager]
+14-Jul-2020 21:59:12.277 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\host-manager] has finished in [95] ms
+14-Jul-2020 21:59:12.278 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager]
+14-Jul-2020 21:59:12.330 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\manager] has finished in [52] ms
+14-Jul-2020 21:59:12.331 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT]
+14-Jul-2020 21:59:12.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [E:\Do An\apache-tomcat-9.0.29\apache-tomcat-9.0.29\webapps\ROOT] has finished in [33] ms
+14-Jul-2020 21:59:12.379 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Jul-2020 21:59:12.404 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Jul-2020 21:59:12.411 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [37,580] milliseconds

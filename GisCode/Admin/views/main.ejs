@@ -1,0 +1,391 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Openlayers test</title>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.1/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.1/css/ol.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <link rel="stylesheet" href="/public/css.css">
+
+</head>
+
+<body>
+    <div>
+        <img src="/public/fonts/open-iconic/banner2.png" ; width="100%" ;>
+    </div>
+    <div class="header">
+
+        <label id="texthd" style="font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600;"> Công cụ theo dõi bệnh truyền nhiễm</label>
+
+        <!-- <div class="logologin">
+
+            <a href="/login">
+
+                <img src="/public/Login_v16/images//icons/favicon.ico" ; width="40px" height="40px" ;>
+                <img src="/public/fonts/open-iconic/user.jpg" ; width="40px" height="40px" ;>
+            </a>
+        </div> -->
+
+    </div>
+
+
+
+    <div class="baobody">
+        <div class="trai">
+            <% var tong = 0; var tongcakhoi=0; var tongcatu=0; %>
+                <% 
+                danhsach.rows.forEach(function(hd){ 
+                    tong += parseInt(hd.tongca)
+                    tongcakhoi += parseInt(hd.tongcakhoibenh);
+                    tongcatu += parseInt(hd.tongcatuvong);
+                %>
+
+
+
+                    <%  }); %>
+                        <h3 style="text-align: center;"> Tổng số ca đã xác nhận trên địa bàn Thành phố Thủ Dầu Một</h3>
+                        <p style="font-size: 30px; font-weight: 800; color:#DE3700;  margin-top: -10px; text-align: center; ">
+                            <%= tong  %>
+                        </p>
+
+                        <div class="tttraitren">
+                            <h2 class="ttcabenh">
+                                <div class="logoid" style="background:rgb(244,195,99)">
+
+                                </div>
+                                <div class="cabenh">
+                                    Ca chữa khỏi
+                                </div>
+                                <div class="solieu">
+                                    <%= tongcakhoi  %>
+                                </div>
+                            </h2>
+
+                            <h2 class="ttcabenh">
+                                <div class="logoid" style="background:rgb(96,187,105)">
+
+                                </div>
+                                <div class="cabenh">
+                                    Ca tử vong
+                                </div>
+                                <div class="solieu">
+                                    <%= tongcatu  %>
+                                </div>
+                            </h2>
+                        </div>
+                        <br>
+                        <hr>
+
+                        <!-- <div class="col-sm-5 information scrollbar " id="information"> -->
+                        <div id="content">
+
+                        </div>
+
+                        <div class="chuthich">
+                            <h3>Chú thích loại bệnh:</h3>
+                            <div class="ct2" style="background:#FF0000">
+
+                            </div>
+                            <h3 class="ctbenh"> Corona</h3>
+                            <div class="ct2" style="background:#0000FF">
+
+                            </div>
+                            <h3 class="ctbenh"> Sốt rét</h3>
+                            <div class="ct2" style="background:#FFFF00">
+
+                            </div>
+                            <h3 class="ctbenh"> A/H5N1</h3>
+                        </div>
+
+
+                        <!-- <h3 style="text-align: center; "> Thống kê chi tiết phường</h3> -->
+
+        </div>
+
+
+
+        <div class="phaitren">
+            <h3 id="textphaitren" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600;"> Thành phố Thủ Dầu Một</h3>
+
+            <a id="t3" href="/login">
+
+                <img src="/public/Login_v16/images//icons/favicon.ico" ; width="30px" height="35px" ;>
+                <!-- <img src="/public/fonts/open-iconic/user.jpg" ; width="40px" height="40px" ;> -->
+            </a>
+            <!-- <h3 id="t1" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; font-size: 15px;"> Tổng quan </h3>
+            <h3 id="t2" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; font-size: 15px;"> Tin Tức </h3>
+            <h3 id="t3" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; font-size: 15px;"> Video</h3> -->
+
+
+        </div>
+
+        <div id="map" class="map">
+
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        window.onload = init;
+
+        function init() {
+
+            var container = document.getElementById('popup');
+            var content = document.getElementById('popup-content');
+            var closer = document.getElementById('popup-closer');
+
+            /**
+             * Create an overlay to anchor the popup to the map.
+             */
+            var overlay = new ol.Overlay( /** @type {olx.OverlayOptions} */ ({
+                element: container,
+                autoPan: true,
+                autoPanAnimation: {
+                    duration: 250
+                }
+            }));
+            /**
+             * Add a click handler to hide the popup.
+             * @return {boolean} Don't follow the href.
+             */
+            closer.onclick = function() {
+                overlay.setPosition(undefined);
+                closer.blur();
+                return false;
+            };
+
+            var center1 = [11871819.171012152, 1229646.7537582985]
+            var map = new ol.Map({
+                view: new ol.View({
+                    center: center1,
+                    zoom: 11,
+                }),
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                    })
+                ],
+                overlays: [overlay],
+                target: 'map',
+                view: new ol.View({
+                    center: [11871819.171012152, 1229646.7537582985],
+                    zoom: 13
+                })
+            });
+
+
+            var vung_phuong = new ol.layer.Image({
+                source: new ol.source.ImageWMS({
+                    url: 'http://localhost:8080/geoserver/DoAnGis/wms',
+                    params: {
+                        'LAYERS': 'DoAnGis:vungranhgioiphuongtxtdm_region'
+                    },
+                    serverType: 'geoserver'
+                })
+            });
+
+            var ubnd = new ol.layer.Image({
+                source: new ol.source.ImageWMS({
+                    url: 'http://localhost:8080/geoserver/DoAnGis/wms',
+                    params: {
+                        'LAYERS': 'DoAnGis:ubnd_point'
+                    },
+                    serverType: 'geoserver'
+                })
+            });
+            var benh_nhan = new ol.layer.Image({
+                source: new ol.source.ImageWMS({
+                    url: 'http://localhost:8080/geoserver/DoAnGis/wms',
+                    params: {
+                        'LAYERS': 'DoAnGis:bn_point'
+                    },
+                    serverType: 'geoserver'
+                })
+            });
+            map.addLayer(vung_phuong);
+            map.addLayer(ubnd);
+            map.addLayer(benh_nhan);
+
+            vung_phuong.setOpacity(0.7);
+            benh_nhan.setOpacity(2);
+            ubnd.setOpacity(1);
+
+            map.on('singleclick', function(evt) {
+
+                var view = map.getView();
+                var viewResolution = view.getResolution();
+                var source = benh_nhan.getSource();
+                var url = source.getFeatureInfoUrl(
+                    evt.coordinate, viewResolution, view.getProjection(), {
+                        'INFO_FORMAT': 'application/json',
+                        'FEATURE_COUNT': 50
+                    });
+
+                if (url) {
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: 'json',
+                        success: function(n) {
+                            var content = "<table>";
+                            for (var i = 0; i < n.features.length; i++) {
+                                var feature = n.features[i];
+                                var featureAttr = feature.properties;
+                                content += " <tr> <td> ID: " + featureAttr["id"] + "</td>" +
+                                    "<tr> <td> Tuổi: " + featureAttr["tuoi"] + " </td></tr>" +
+                                    "<tr> <td> Giới Tính: " + featureAttr["gioitinh"] + " </td></tr>" +
+                                    "<tr> <td> Địa chỉ: " + featureAttr["diachi"] + " </td></tr>" +
+
+
+                                    "</tr>"
+                            }
+                            content += "</table>";
+                            // $("#information").html(content);
+                            $("#popup-content").html(content);
+                            overlay.setPosition(evt.coordinate);
+                        }
+                    });
+                }
+
+            });
+
+
+
+            map.on('singleclick', function(evt) {
+
+                var view = map.getView();
+                var viewResolution = view.getResolution();
+                var source = vung_phuong.getSource();
+                var url = source.getFeatureInfoUrl(
+                    evt.coordinate, viewResolution, view.getProjection(), {
+                        'INFO_FORMAT': 'application/json',
+                        'FEATURE_COUNT': 50
+                    });
+
+                if (url) {
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: 'json',
+                        success: function(n) {
+                            //var content = "<table>";
+                            for (var i = 0; i < n.features.length; i++) {
+                                var feature = n.features[i];
+                                var featureAttr = feature.properties;
+                                //console.log(featureAttr["id"]);
+                                $.ajax({
+                                    url: "/getcabenh",
+                                    type: "post",
+                                    dataType: "json",
+                                    data: {
+                                        idphuong: featureAttr["id"]
+                                    },
+                                    success: function(result) {
+                                        //$('#result').html(result);
+                                        var giaodien = '<table class="ttct" style="margin-top: 30px; border: solid:1px; margin-bottom: 20px;"><h2 style="font-size:20px;text-align: center; margin-top:20px;" >Thông tin chi tiết phường</h2><thead class="thietke" style="border: solid 1px;"><td> </td><th >Tổng ca</th><th style="color:rgb(244,195,99)">Ca chữa khỏi</th><th style="color:rgb(96,187,105)">Ca tử vong</th> </thead>  ';
+                                        var tong = 0;
+                                        var tongcakhoi = 0;
+                                        var tongcatu = 0;
+
+                                        for (var i = 0; i < result.rows.length; i++) {
+                                            tong += parseInt(result.rows[i].tongcatuvong) + parseInt(result.rows[i].tongcakhoibenh)
+                                            tongcakhoi += parseInt(result.rows[i].tongcakhoibenh);
+                                            tongcatu += parseInt(result.rows[i].tongcatuvong);
+
+
+
+                                            var tongcabenh = parseInt(result.rows[i].tongcatuvong) + parseInt(result.rows[i].tongcakhoibenh);
+                                            giaodien += '<thead><th>' + result.rows[i].ten + '</th>';
+                                            giaodien += '<th>' + tongcabenh + '</th>';
+                                            giaodien += '<th>' + result.rows[i].tongcakhoibenh + '</th>';
+
+                                            giaodien += '<th>' + result.rows[i].tongcatuvong + '</th></thead>';
+
+
+
+
+
+                                        }
+                                        giaodien += '<th>' + 'Tổng cộng' + '</th>';
+                                        giaodien += '<th>' + tong + '</th>';
+                                        giaodien += '<th>' + tongcakhoi + '</th>';
+                                        giaodien += '<th>' + tongcatu + '</th>';
+                                        giaodien += '</table>';
+                                        document.getElementById("content").innerHTML = giaodien;
+
+                                        //document.getElementById("demo").innerHTML = sum;
+
+                                        //console.log("Thanh cong");
+                                    }
+                                });
+                            }
+                            //content += "</table>";
+                            // $("#information").html(content);
+                            //$("#popup-content").html(content);
+                            //overlay.setPosition(evt.coordinate);
+                        }
+                    });
+                }
+
+            });
+
+
+
+
+            $("#chk_vungtdm").change(function() {
+                if ($("#chk_vungtdm").is(":checked")) {
+                    vung_phuong.setVisible(true);
+                } else {
+                    vung_phuong.setVisible(false);
+                }
+            });
+            $("#chk_hodan").change(function() {
+                if ($("#chk_hodan").is(":checked")) {
+                    ho_dan.setVisible(true);
+                } else {
+                    ho_dan.setVisible(false);
+                }
+            });
+            $("#chk_ubnd").change(function() {
+                if ($("#chk_ubnd").is(":checked")) {
+                    ubnd.setVisible(true);
+                } else {
+                    ubnd.setVisible(false);
+                }
+            });
+
+        };
+    </script>
+    <!-- <script type="text/javascript">
+        var center1= [11871360.412643086, 1199724.1072298482]
+        var map = new ol.Map({
+        view: new ol.View({
+            center: center1,
+            zoom: 7,
+            
+
+        }),
+        layers: [
+         new ol.layer.Tile({
+         source: new ol.source.OSM()
+        })
+         ],
+        target: 'map',
+   
+        });
+        map.on('click',function(e){
+            console.log(e.coordinate);
+        })
+
+    </script> -->
+
+</body>
+
+</html>
